@@ -1,66 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 	<head>
 		<meta charset="utf-8">
-		<meta name="description" content="Web-Oberfläche">
-		<title>UE_01</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	
+        <title>Z-Index Flip</title>
+        <meta name="description" content="Das ist ein ganz einfaches, gültiges HTML-Dokument">
+		<style>
+				body{
+				margin:0;
+				padding:0;
+				background-color:#000033;
+				font-family:All-ProSans,Helvetica,Arial,sans-serif;
+			}
+
+
+
+
+			
+			div {
+				width: 50vw;
+				height: 30vw;
+				position: absolute;
+				top: 5vw;
+			}
+			
+			.Bild{
+			height:70%;
+			width:70%;
+			padding-left:15%;
+			padding-top:2%;
+			}
+			
+		
+			
+			#video {
+				background-color: lightblue;
+			}
+			#audio {
+				background-color: lightblue;
+			}
+			
+			#bild {
+				background-color: lightblue;
+			}
+			#text {
+				background-color: lightblue;
+			}
+		</style>
 	</head>
 	<body>
-	
 
-	
-	<div class="Überschrift">
-	<h1>WEB-OBERFLÄCHE</h1>
-	</div>
-	
-	
-	<div class="class1">
-	<div class="Bild1">
-	<a href="Unterseiten/Unterseite_1/Unterseite01.html">
-	<img class="box1" src="img/Helmet_2.jpg"></a>
-	<div class="text">
-	<h2>PLAYER</h2>
-	<button onclick="document.getElementById('audio').style='z-index:2;'; document.getElementById('video').style='z-index:1;';">Audio</button>
-	</div>
-	</div>
-	
-	<div class="Bild2">
-	<a href="Unterseiten/Unterseite_2/Unterseite02.html">
-	<img class="box1" src="img/Player_2.jpg"></a>
-	<div class="text">
-	<h2>HISTORY</h2>
-	</div>
-	</div>
-	
-	<div class="Bild3">
-	<a href="Unterseiten/Unterseite_3/Unterseite03.html">
-	<img class="box1" src="img/Diamond_2.jpg"></a>
-	<div class="text">
-	<h2> VIDEO HIGHLIGHTS</h2>
-	</div>
-	</div>
-	
-	<div class="Bild4">
-	<a href="Unterseiten/Unterseite_4/Unterseite04.html">
-	<img class="box1" src="img/Story_2.jpg"></a>
-	<div class="text">
-	<h2>MUSIC</h2>
-	</div>
-	</div>
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
+		<button onclick="document.getElementById('bild').style='z-index:2;'; document.getElementById('text').style='z-index:1;';">Bild</button>
+		<button onclick="document.getElementById('text').style='z-index:2;'; document.getElementById('bild').style='z-index:1;';">Text</button>
+		
+		<button onclick="document.getElementById('video').style='z-index:2;'; document.getElementById('audio').style='z-index:1;';">Video</button>
+		<button onclick="document.getElementById('audio').style='z-index:2;'; document.getElementById('video').style='z-index:1;';">Audio</button>
+		
+		
+		
+		
+		<div id="bild"><h1>Bild</h1>
+		<img class="Bild" src="img/Seahawks_Team_Foto.jpg">
+		</div>
+		
+		<div id="text"><h1>Text</h1> <br>
+		<p>	Die Seattle Seahawks sind ein US-amerikanisches American-Football-Franchise aus Seattle im Bundesstaat Washington.</p>
+		<p>	Sie gehören der National Football League (NFL) an und spielen dort in der NFC West der National Football Conference (NFC).</p>
+		<p>	Die Seahawks kamen 1976 als Expansion Team in der NFC West neu in die NFL. Zu ihrer zweiten Saison wechselten sie von der NFC in die American Football Conference (AFC). </p>
+		<p>	Dort qualifizierten sie sich im achten Jahr ihres Bestehens zum ersten Mal für die Play-offs und erreichten sogleich das AFC Championship Game.</p>
+		<p>	Zur Saison 2002 wechselten sie zurück in die NFC West, wo sie nach der Saison 2005 zum ersten Mal den Super Bowl erreichten, den sie gegen die Pittsburgh Steelers verloren. </p>
+		<p>	In der Saison 2013 zogen die Seahawks zum zweiten Mal in den Super Bowl ein, den sie gegen die Denver Broncos gewannen.</p>
+		<p>	Ein Jahr später gelang ihnen erneut der Einzug in den Super Bowl, in dem jedoch die New England Patriots siegreich waren. </p>
+		<p>	Die Seattle Seahawks sind das einzige Team der NFL, das sowohl im AFC Championship Game als auch im NFC Championship Game antrat. </p></div>
+		
+		<div id="video"><h1>Video</h1>
+		<iframe width="350" height="250" src="https://www.youtube.com/embed/4nYf6Bzvtso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding-left:20%;"></iframe>
+		</div>
+		
+		<div id="audio"><h1>Audio</h1>
+		<iframe src="https://open.spotify.com/embed/playlist/0Dv2MHkINtnVqPpjb84tCk" width="300" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media" style="padding-left:20%;"></iframe>
+		</div>
+		
+		
 	</body>
-	
 </html>
