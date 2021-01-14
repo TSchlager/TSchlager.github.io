@@ -1,0 +1,44 @@
+
+body{
+	margin:0;
+	padding:0;
+	background-color:#ff6e6e;
+	font-family:All-ProSans,Helvetica,Arial,sans-serif;
+}
+
+
+
+.class1{
+	display:flex;
+}
+
+
+.box1{
+clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+margin:0;
+width:22vw;
+}
+
+.Überschrift{
+	padding-top:2%;
+	text-align:center;
+	font-size:150%;
+	padding-bottom:5%;
+	color:#575757;
+}
+
+.Bild1{
+	padding-left:23%;
+}
+
+
+img{
+	display:inline-block;
+}
+
+.text{
+font-size:130%;
+color:#575757;
+text-align:center;
+padding-right:36%;
+}

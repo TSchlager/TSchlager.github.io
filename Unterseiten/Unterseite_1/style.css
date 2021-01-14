@@ -1,0 +1,24 @@
+
+				body{
+                    margin: 0;
+                    padding: 0;
+                    height: 100vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color:#ff6e6e;
+                }
+    
+    
+                .überschrift{
+                    margin-bottom: 5%;
+                    font-size: 200%;
+                    color:#575757;
+                    text-align: center;
+                }
+
+
+                .back{
+                    margin-top: 5%;
+                    text-align: center;
+                }
